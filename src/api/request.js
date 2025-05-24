@@ -9,7 +9,7 @@ console.log('API Base URL:', API_BASE_URL); // 调试用，生产环境可以删
 
 // 创建axios实例
 const request = axios.create({
-  baseURL: API_BASE_URL, // 修改为使用环境变量
+  baseURL: API_BASE_URL + '/api', // 修改为使用环境变量
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json'
